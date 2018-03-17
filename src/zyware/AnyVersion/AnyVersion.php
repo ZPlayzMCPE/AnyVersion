@@ -13,6 +13,16 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 
 class AnyVersion extends PluginBase implements Listener{
+	
+	public const CURRENT_PROTOCOL = 222;
+	/**
+	 * Current Minecraft PE version reported by the server. This is usually the earliest currently supported version.
+	 */
+	public const MINECRAFT_VERSION = 'v1.2.13.10 beta';
+	/**
+	 * Version number sent to clients in ping responses.
+	 */
+	public const MINECRAFT_VERSION_NETWORK = '1.2.13.10';
 
 	public const PROTOCOL_12 = [134, 135, 136, 137, 140, 141, 150, 160, 200, 201, 220, 222];
 
